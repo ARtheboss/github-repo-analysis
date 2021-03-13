@@ -12,7 +12,7 @@ Use this program to get the following information about a repository during a ti
 Clone the repository.
 
 Make sure the following requirements are met:
-* python3
+* python3 
 * datetime
 * sqlite3
 * [requests](https://pypi.org/project/requests/)
