@@ -34,7 +34,7 @@ while True:
         repo_name = "hadoop"
 
     # test if is valid repository
-    commit_obj = test_repo_info(repo_owner, repo_name, start_date, end_date)
+    commit_obj = test_repo_info(repo_owner, repo_name)
 
     if 'message' in commit_obj:
         # error in request
@@ -70,7 +70,7 @@ if init_db(f"{repo_owner}.{repo_name}") == "Created":
 top_authors = get_top_authors()
 print("\nTop Authors")
 for i in range(1, min(4, len(top_authors))):
-    print(f"{i}: {top_authors[i-1][1]} - {top_authors[i-1][2]}")
+    print(f"{i}: {top_authors[i-1][0]} - {top_authors[i-1][1]}")
 
 
 
