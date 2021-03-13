@@ -24,3 +24,5 @@ python3 main.py
 ```
  
 Follow the instructions given by the program.
+
+Note: An interval with more than 6,000 commits will not work as it will exceed the GitHub API's rate limit.
